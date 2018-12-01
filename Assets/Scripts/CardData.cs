@@ -9,7 +9,11 @@ public class CardData : ScriptableObject {
 	public string cardName;
 	public string cardDesc;
 	public string cardType;
-	public Image cardImage;
+	public Sprite cardSprite;
+	
+	private void OnEnable() {
+		
+	}
 
 }
 

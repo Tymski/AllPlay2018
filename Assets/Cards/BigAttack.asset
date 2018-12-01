@@ -14,4 +14,4 @@ MonoBehaviour:
   cardName: Wielki cios
   cardDesc: "Zadaj {0} ze wzgl\u0119du na u\u017Cycie du\u017Cej si\u0142y w tym ciosie"
   cardType: offensive
-  cardImage: {fileID: 0}
+  cardSprite: {fileID: 21300000, guid: 3d5c0012fb58dbc43b7ddf42a8307102, type: 3}
