@@ -28,6 +28,9 @@ public class Store : MonoBehaviour
     atk = 2;
     lvl = 1;
     room = 1;
+    opponentATK = 1;
+    opponentDEF = 2;
+    opponentHP = 1;
   }
   private void Awake()
   {
