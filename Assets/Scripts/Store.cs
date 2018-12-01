@@ -11,7 +11,15 @@ public class Store : MonoBehaviour
   public static int atk;
   public static int lvl;
   public static int room;
+
+  public static int playerCardIDs;
   public static List<CardData> listOfCards;
+
+  public static int opponentHP;
+  public static int opponentDEF;
+  public static int opponentATK;
+
+  public static int []opponentCardIDs;
 
   public static void setState()
   {
