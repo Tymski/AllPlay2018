@@ -5,15 +5,15 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class WinUI : MonoBehaviour {
+public class EndUI : MonoBehaviour {
 	
 	public TextMeshProUGUI EndSceneText;
 	public TextMeshProUGUI EndSceneDetailsText;
 
 	// Use this for initialization
 	void Start () {
-		EndSceneText.text = "Wygrana!";
-		string tmp = "Dotarto do poziomu " + Store.lvl.ToString() +" i pokoju " + Store.room.ToString()+". Naciśnij dowolny przycisk aby kontynuować.";
+		EndSceneText.text = "Przegrana!";
+		string tmp = "Dotarto do poziomu " + Store.lvl.ToString() +" i pokoju " + Store.room.ToString() + ". Naciśnij dowolny przycisk aby kontynuować.";
 		EndSceneDetailsText.text = tmp;
 	}
 	
