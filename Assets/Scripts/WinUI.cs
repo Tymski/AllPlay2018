@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class WinUI : MonoBehaviour {
 	
@@ -11,13 +12,17 @@ public class WinUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		EndSceneText.text = "Wygrana!";
+		string tmp = "Dotarto do poziomu " + Store.lvl.ToString() +" i pokoju " + Store.room.ToString()+". Naciśnij dowolny przycisk aby kontynuować.";
+		EndSceneDetailsText.text = tmp;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		EndSceneText.text = "Wygrana!";
-		string tmp = "Dotarto do poziomu " + Store.lvl.ToString() +" i pokoju " + Store.room.ToString();
-		EndSceneDetailsText.text = tmp;
+		if(Input.GetKeyDown(KeyCode.Escape)) {
+			SceneManager.LoadScene("MainMenu");
+		} else if(Input.anyKey) {
+			SceneManager.LoadScene("Level");
+		}
 	}
 }
