@@ -8,7 +8,7 @@ public class SetPlayerNumbersUI : MonoBehaviour {
 	public TextMeshProUGUI hp;
 	public TextMeshProUGUI def;
 	public TextMeshProUGUI atk;
-	void Start () {
+	void Update () {
 		hp.text = Store.hp.ToString ();
 		def.text = Store.def.ToString ();
 		atk.text = Store.atk.ToString ();
