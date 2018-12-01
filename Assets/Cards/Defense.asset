@@ -14,4 +14,4 @@ MonoBehaviour:
   cardName: Obrona
   cardDesc: "Zablokuj obra\u017Cenia o warto\u015Bci {0}"
   cardType: defensive
-  cardSprite: {fileID: 21300000, guid: 3d5c0012fb58dbc43b7ddf42a8307102, type: 3}
+  cardSprite: {fileID: 21300000, guid: 6839a5b7f06adc142b7bdaa2efaffde6, type: 3}

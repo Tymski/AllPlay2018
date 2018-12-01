@@ -14,4 +14,4 @@ MonoBehaviour:
   cardName: "Wi\u0119ksze leczenie"
   cardDesc: "Odzyskaj punkty zdrowia o warto\u015Bci {0}"
   cardType: passive
-  cardSprite: {fileID: 21300000, guid: 3d5c0012fb58dbc43b7ddf42a8307102, type: 3}
+  cardSprite: {fileID: 21300000, guid: 4a9667ef5c6cd1a419a1cf554d191158, type: 3}
