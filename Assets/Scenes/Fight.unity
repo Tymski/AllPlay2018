@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 86060902}
   - component: {fileID: 86060904}
   - component: {fileID: 86060903}
+  - component: {fileID: 86060905}
   m_Layer: 0
   m_Name: PlayerChoices
   m_TagString: Untagged
@@ -260,6 +261,22 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 86060901}
   m_CullTransparentMesh: 0
+--- !u!114 &86060905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 86060901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e11a87f4a480d4ab6aae112eb1a529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cards:
+  - {fileID: 1291934098}
+  - {fileID: 585858484}
+  - {fileID: 657451581}
+  iterator: 0
 --- !u!1 &134502061
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,6 +830,11 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114927124257032448, guid: c708bec71fb68544b84a012ccda7e968,
+        type: 2}
+      propertyPath: playerCardChoose
+      value: 
+      objectReference: {fileID: 86060905}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c708bec71fb68544b84a012ccda7e968, type: 2}
   m_IsPrefabAsset: 0
@@ -1073,6 +1095,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79a5b73e5d1200645a4cceb147da1b33, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &585858484 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114752349636554420, guid: 6f9ec1c86d1d5e147b41ca2bc445dd37,
+    type: 2}
+  m_PrefabInternal: {fileID: 1724952443}
+  m_Script: {fileID: 11500000, guid: 9278217e9d9bb35428ce0aec0f6d7591, type: 3}
 --- !u!1 &588086152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,6 +1216,12 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224049574309290548, guid: 6f9ec1c86d1d5e147b41ca2bc445dd37,
     type: 2}
   m_PrefabInternal: {fileID: 1870420025}
+--- !u!114 &657451581 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114752349636554420, guid: 6f9ec1c86d1d5e147b41ca2bc445dd37,
+    type: 2}
+  m_PrefabInternal: {fileID: 1995492256}
+  m_Script: {fileID: 11500000, guid: 9278217e9d9bb35428ce0aec0f6d7591, type: 3}
 --- !u!1001 &665264368
 Prefab:
   m_ObjectHideFlags: 0
@@ -1536,16 +1570,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114888494537026334, guid: c708bec71fb68544b84a012ccda7e968,
+    - target: {fileID: 114927124257032448, guid: c708bec71fb68544b84a012ccda7e968,
         type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114888494537026334, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: playerCardChoose
+      value: 
+      objectReference: {fileID: 86060905}
     - target: {fileID: 114344915271202866, guid: c708bec71fb68544b84a012ccda7e968,
         type: 2}
       propertyPath: m_havePropertiesChanged
@@ -1556,79 +1585,14 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224927481731438124, guid: c708bec71fb68544b84a012ccda7e968,
+    - target: {fileID: 114888494537026334, guid: c708bec71fb68544b84a012ccda7e968,
         type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224927481731438124, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224927481731438124, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224927481731438124, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224939975889609648, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224939975889609648, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224939975889609648, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224939975889609648, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224077876070838172, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224077876070838172, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224077876070838172, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224077876070838172, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114567399017118914, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_Color.r
+      propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114567399017118914, guid: c708bec71fb68544b84a012ccda7e968,
+    - target: {fileID: 114888494537026334, guid: c708bec71fb68544b84a012ccda7e968,
         type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114567399017118914, guid: c708bec71fb68544b84a012ccda7e968,
-        type: 2}
-      propertyPath: m_Color.b
+      propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1937,6 +1901,12 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224755518536087704, guid: 79a5b73e5d1200645a4cceb147da1b33,
     type: 2}
   m_PrefabInternal: {fileID: 2052288524}
+--- !u!114 &1291934098 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114752349636554420, guid: 6f9ec1c86d1d5e147b41ca2bc445dd37,
+    type: 2}
+  m_PrefabInternal: {fileID: 665264368}
+  m_Script: {fileID: 11500000, guid: 9278217e9d9bb35428ce0aec0f6d7591, type: 3}
 --- !u!224 &1352412104 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224755518536087704, guid: 79a5b73e5d1200645a4cceb147da1b33,
@@ -2297,6 +2267,11 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 94.31
       objectReference: {fileID: 0}
+    - target: {fileID: 114927124257032448, guid: c708bec71fb68544b84a012ccda7e968,
+        type: 2}
+      propertyPath: playerCardChoose
+      value: 
+      objectReference: {fileID: 86060905}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c708bec71fb68544b84a012ccda7e968, type: 2}
   m_IsPrefabAsset: 0
@@ -2664,6 +2639,11 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 94.31
       objectReference: {fileID: 0}
+    - target: {fileID: 114927124257032448, guid: c708bec71fb68544b84a012ccda7e968,
+        type: 2}
+      propertyPath: playerCardChoose
+      value: 
+      objectReference: {fileID: 86060905}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c708bec71fb68544b84a012ccda7e968, type: 2}
   m_IsPrefabAsset: 0
@@ -3219,6 +3199,11 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 94.31
       objectReference: {fileID: 0}
+    - target: {fileID: 114927124257032448, guid: c708bec71fb68544b84a012ccda7e968,
+        type: 2}
+      propertyPath: playerCardChoose
+      value: 
+      objectReference: {fileID: 86060905}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c708bec71fb68544b84a012ccda7e968, type: 2}
   m_IsPrefabAsset: 0
