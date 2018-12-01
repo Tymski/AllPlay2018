@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Defense
   m_EditorClassIdentifier: 
   cardName: Obrona
-  cardDesc: "Zablokuj {0} punkt\xF3w obra\u017Ce\u0144"
+  cardDesc: "Zablokuj obra\u017Cenia o warto\u015Bci {0}"
   cardType: defensive
   cardSprite: {fileID: 21300000, guid: 3d5c0012fb58dbc43b7ddf42a8307102, type: 3}
