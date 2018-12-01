@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -767,8 +767,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "KSI\u0118\u017BNICZKA ALICJA"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: aa5ba309a33509b46a513c942e9d4fd2, type: 2}
-  m_sharedMaterial: {fileID: 21136935758934166, guid: aa5ba309a33509b46a513c942e9d4fd2,
+  m_fontAsset: {fileID: 11400000, guid: afa94571ee92d3345b7f300cb2c7e5d9, type: 2}
+  m_sharedMaterial: {fileID: 21386840899353160, guid: afa94571ee92d3345b7f300cb2c7e5d9,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
