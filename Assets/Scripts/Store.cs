@@ -32,6 +32,22 @@ public class Store : MonoBehaviour
     opponentDEF = 2;
     opponentHP = 1;
   }
+  
+  public static void ADD_ONE_LEVEL() {
+    lvl = lvl + 1;
+  }
+  
+  public static void ADD_ONE_ROOM() {
+    room = room + 1;
+  }
+  
+  public static void RESET_ROOM() {
+    room = 0;
+  }
+  
+  public static void RESET_LEVEL() {
+    lvl = 0;
+  }
   private void Awake()
   {
     if(lvl==0)
