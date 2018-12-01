@@ -20,10 +20,10 @@ public class Store : MonoBehaviour
     atk = 2;
     lvl = 1;
     room = 1;
-
   }
   private void Awake()
   {
+    if(lvl==0)
     setState();
   }
 
