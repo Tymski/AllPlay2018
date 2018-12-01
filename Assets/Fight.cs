@@ -7,6 +7,9 @@ public class Fight : MonoBehaviour {
 	public CardUI[] PlayerCards;
 	public CardUI[] EnemyCards;
 
+	public PlayerAnimationSwitcher playerAnimationSwitcher;
+	public PlayerAnimationSwitcher monsterAnimationSwitcher;
+
 	public string CheckWin () {
 		if (Store.hp <= 0) return "lose";
 		if (Store.opponentHP <= 0) return "win";
@@ -50,6 +53,25 @@ public class Fight : MonoBehaviour {
 		trans.alpha = 0.2f;
 		var trans2 = cardEnemy.GetComponent<CanvasGroup> ();
 		trans2.alpha = 0.2f;
+
+		if (cardPlayer.data.cardType == "deffensive") {
+			playerAnimationSwitcher.setProp ("defence");
+		}
+		if (cardPlayer.data.cardType == "offensive") {
+			playerAnimationSwitcher.setProp ("attack");
+		}
+		if (cardPlayer.data.cardType == "passive") {
+			playerAnimationSwitcher.setProp ("rest");
+		}
+		if (cardEnemy.data.cardType == "deffensive") {
+			monsterAnimationSwitcher.setProp ("defence");
+		}
+		if (cardEnemy.data.cardType == "offensive") {
+			monsterAnimationSwitcher.setProp ("attack");
+		}
+		if (cardEnemy.data.cardType == "passive") {
+			monsterAnimationSwitcher.setProp ("rest");
+		}
 	}
 
 	private void Start () {

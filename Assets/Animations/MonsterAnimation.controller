@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: monster_0
+  m_Name: MonsterAnimation
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: attack
@@ -26,7 +26,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: indle
+  - m_Name: idle
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -101,7 +101,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: indle
+    m_ConditionEvent: idle
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102868193659170664}
