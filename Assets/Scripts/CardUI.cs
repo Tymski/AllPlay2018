@@ -11,7 +11,6 @@ public class CardUI : MonoBehaviour
   public TextMeshProUGUI cardName;
   public TextMeshProUGUI cardDescription;
   public CardData data;
-
   public int power;
   // Use this for initialization
   void Start()
