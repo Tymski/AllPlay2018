@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Resurrect
   m_EditorClassIdentifier: 
   cardName: "Wi\u0119ksze leczenie"
-  cardDesc: "Ulecz {0} punkt\xF3w obra\u017Ce\u0144"
+  cardDesc: "Odzyskaj punkty zdrowia o warto\u015Bci {0}"
   cardType: passive
   cardSprite: {fileID: 21300000, guid: 3d5c0012fb58dbc43b7ddf42a8307102, type: 3}
