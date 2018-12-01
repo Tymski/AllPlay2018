@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class PlayerAnimationSwitcher : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+	public Animator animator;
+	public string[] props = { "attack", "idle", "defence", "rest" };
+
+	private void Start () {
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	public void setProp (string prop) {
+		foreach (string s in props) {
+			animator.SetFloat (s, .0f);
+		}
+		animator.SetFloat (prop, 1f);
 	}
+
 }
