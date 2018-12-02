@@ -20,15 +20,15 @@ public class Nawigacja : MonoBehaviour {
 			Store.ADD_ONE_LEVEL();
 			Store.RESET_ROOM();
 			SceneManager.LoadScene("Level");
-			Debug.Log("lvl+");
+			// Debug.Log("lvl+");
 		} else if(Input.GetKeyDown(KeyCode.RightArrow)) {
 			Store.ADD_ONE_ROOM();
+			// Debug.Log("room+");
 			if((Store.room%2 == 0) || (Store.room == 0)) {
 				SceneManager.LoadScene("Fight");
 			} else {
 				SceneManager.LoadScene("Level");
 			}
-			Debug.Log("room+");
 		}
 	}
 }
