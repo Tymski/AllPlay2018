@@ -7,6 +7,11 @@ public class NextFightPhase : MonoBehaviour {
 	public Fight fight;
 	public void next () {
 		fight.fightPhase++;
-		Debug.Log (fight.fightPhase.ToString ());
+	}
+
+	private void Update () {
+		if (Input.GetKeyDown ("space")) {
+			fight.fightPhase++;
+		}
 	}
 }
