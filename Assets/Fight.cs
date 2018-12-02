@@ -54,7 +54,7 @@ public class Fight : MonoBehaviour {
 		var trans2 = cardEnemy.GetComponent<CanvasGroup> ();
 		trans2.alpha = 0.2f;
 
-		if (cardPlayer.data.cardType == "deffensive") {
+		if (cardPlayer.data.cardType == "defensive") {
 			playerAnimationSwitcher.setProp ("defence");
 		}
 		if (cardPlayer.data.cardType == "offensive") {
@@ -63,7 +63,7 @@ public class Fight : MonoBehaviour {
 		if (cardPlayer.data.cardType == "passive") {
 			playerAnimationSwitcher.setProp ("rest");
 		}
-		if (cardEnemy.data.cardType == "deffensive") {
+		if (cardEnemy.data.cardType == "defensive") {
 			monsterAnimationSwitcher.setProp ("defence");
 		}
 		if (cardEnemy.data.cardType == "offensive") {
