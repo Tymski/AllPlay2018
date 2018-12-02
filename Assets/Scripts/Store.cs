@@ -11,7 +11,15 @@ public class Store : MonoBehaviour
   public static int atk;
   public static int lvl;
   public static int room;
+
+  public static int playerCardIDs;
   public static List<CardData> listOfCards;
+
+  public static int opponentHP;
+  public static int opponentDEF;
+  public static int opponentATK;
+
+  public static int []opponentCardIDs;
 
   public static void setState()
   {
@@ -20,6 +28,25 @@ public class Store : MonoBehaviour
     atk = 2;
     lvl = 1;
     room = 1;
+    opponentATK = 1;
+    opponentDEF = 2;
+    opponentHP = 1;
+  }
+  
+  public static void ADD_ONE_LEVEL() {
+    lvl = lvl + 1;
+  }
+  
+  public static void ADD_ONE_ROOM() {
+    room = room + 1;
+  }
+  
+  public static void RESET_ROOM() {
+    room = 0;
+  }
+  
+  public static void RESET_LEVEL() {
+    lvl = 0;
   }
   private void Awake()
   {

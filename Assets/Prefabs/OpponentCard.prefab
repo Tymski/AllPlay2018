@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114122133766151146}
   - component: {fileID: 114514617897833310}
   - component: {fileID: 114752349636554420}
+  - component: {fileID: 225738483223221478}
   m_Layer: 0
   m_Name: OpponentCard
   m_TagString: Untagged
@@ -208,12 +209,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -230,7 +231,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 114303113348724100}
   m_OnClick:
     m_PersistentCalls:
@@ -256,7 +257,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: de456bbf660412e43b92f7d88c218f48, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -305,8 +306,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
+    m_Top: 21
+    m_Bottom: 10
   m_ChildAlignment: 1
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
@@ -360,10 +361,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 24
+  m_fontSize: 31.7
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -443,6 +444,7 @@ MonoBehaviour:
   cardDescription: {fileID: 114121515204490768}
   data: {fileID: 11400000, guid: 06f70e53f829bd047a2856dbe0451b9c, type: 2}
   power: 0
+  isOpponent: 0
 --- !u!222 &222100162688634746
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -489,8 +491,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 92.48, y: -109.82}
-  m_SizeDelta: {x: 271.84, y: 286.87}
+  m_AnchoredPosition: {x: 103.4, y: -95.4}
+  m_SizeDelta: {x: 241.1, y: 301}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224586426239723718
 RectTransform:
@@ -508,7 +510,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 161.6, y: 114.6}
+  m_SizeDelta: {x: 110.3, y: 87.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224820287923676618
 RectTransform:
@@ -546,3 +548,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 35.4}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225738483223221478
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1585825763095596}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
