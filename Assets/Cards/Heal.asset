@@ -15,3 +15,4 @@ MonoBehaviour:
   cardDesc: "Odzyskaj punkty zdrowia o warto\u015Bci {0}"
   cardType: passive
   cardSprite: {fileID: 21300000, guid: 931f722df7d6c2b47bb1e03b33eff3aa, type: 3}
+  voiceDescription: {fileID: 8300000, guid: 4d3b16194dee05844a417022c6ccaa7f, type: 3}

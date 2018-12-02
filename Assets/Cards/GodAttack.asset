@@ -15,3 +15,4 @@ MonoBehaviour:
   cardDesc: "zadaj ogromne obra\u017Cenia o warto\u015Bci {0}"
   cardType: offensive
   cardSprite: {fileID: 21300000, guid: 12c800609651c864abdff4066d61704e, type: 3}
+  voiceDescription: {fileID: 8300000, guid: 54e0a45c9afb6ea4995e0d0b7ae654b5, type: 3}

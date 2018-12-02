@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 [RequireComponent (typeof (AudioSource))]
-public class AudioOnHover : MonoBehaviour, IPointerEnterHandler {
+public class AudioOnHover : MonoBehaviour {
 
 	public AudioClip audioSample;
 	AudioSource audioSource;
@@ -12,8 +12,8 @@ public class AudioOnHover : MonoBehaviour, IPointerEnterHandler {
 		audioSource = GetComponent<AudioSource> ();
 	}
 
-	public void OnPointerEnter (PointerEventData pointerEventData) {
-		audioSource.PlayOneShot (audioSample);
-	}
+	// public void OnPointerEnter (PointerEventData pointerEventData) {
+	// 	audioSource.PlayOneShot (audioSample);
+	// }
 
 }

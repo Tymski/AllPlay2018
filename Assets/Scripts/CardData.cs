@@ -11,6 +11,8 @@ public class CardData : ScriptableObject {
 	public string cardType;
 	public Sprite cardSprite;
 	
+	public AudioClip voiceDescription;
+	
 	private void OnEnable() {
 		
 	}

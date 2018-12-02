@@ -15,3 +15,4 @@ MonoBehaviour:
   cardDesc: "Zablokuj wi\u0119ksze obra\u017Cenia o warto\u015Bci {0}"
   cardType: defensive
   cardSprite: {fileID: 21300000, guid: 6839a5b7f06adc142b7bdaa2efaffde6, type: 3}
+  voiceDescription: {fileID: 8300000, guid: 1ecb3612ba0128b4394a3bd078e6ca5b, type: 3}

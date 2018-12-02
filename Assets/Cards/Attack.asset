@@ -15,3 +15,4 @@ MonoBehaviour:
   cardDesc: "Zadaj obra\u017Cenia o warto\u015Bci {0}"
   cardType: offensive
   cardSprite: {fileID: 21300000, guid: 12c800609651c864abdff4066d61704e, type: 3}
+  voiceDescription: {fileID: 8300000, guid: e94b4691c5970124da727e49e75bf607, type: 3}
