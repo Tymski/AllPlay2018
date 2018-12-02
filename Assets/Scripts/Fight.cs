@@ -73,6 +73,13 @@ public class Fight : MonoBehaviour {
 		if (cardEnemy.data.cardType == "passive") {
 			monsterAnimationSwitcher.setProp ("rest");
 		}
+
+		if (Store.opponentHP <= 0) {
+			monsterAnimationSwitcher.setProp ("death");
+		}
+
+		if (Store.hp <= 0)
+			SceneManager.LoadScene ("End");
 	}
 
 	private void Start () {
@@ -102,6 +109,13 @@ public class Fight : MonoBehaviour {
 		ApplyCardEffects (PlayerCards[2], EnemyCards[2]);
 
 		Debug.Log ("Fight.cs 4");
+		while (fightPhase < 4) {
+			yield return null;
+		}
+
+		if (Store.opponentHP > 0)
+			SceneManager.LoadScene ("Fight");
+
 		yield return null;
 	}
 }

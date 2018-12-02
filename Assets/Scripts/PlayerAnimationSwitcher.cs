@@ -6,9 +6,11 @@ public class PlayerAnimationSwitcher : MonoBehaviour {
 
 	public Animator animator;
 	public float timer;
-	public string[] props = { "attack", "idle", "defence", "rest" };
+	public string[] props = { "attack", "idle", "defence", "rest", "death" };
 
 	public string currentProp = "idle";
+
+	public bool isOpponent = false;
 
 	private void Start () {
 
@@ -38,7 +40,9 @@ public class PlayerAnimationSwitcher : MonoBehaviour {
 			}
 		}
 		if (timer > 1.5f) {
-			setProp ("idle");
+			if (!isOpponent || Store.opponentHP > 0) {
+				setProp ("idle");
+			}
 		}
 
 	}

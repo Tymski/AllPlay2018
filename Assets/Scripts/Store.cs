@@ -23,7 +23,7 @@ public class Store : MonoBehaviour
 
   public static void setState()
   {
-    hp = 5;
+    hp = 6;
     def = 1;
     atk = 2;
     lvl = 1;
