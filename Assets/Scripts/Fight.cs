@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+[RequireComponent (typeof (AudioSource))]
 public class Fight : MonoBehaviour {
 
 	public CardUI[] PlayerCards;
-	public CardUI[] EnemyCards;
+	public CardUI[] EnemyCards;	
+
+	AudioSource audioSource;
+
 
 	public PlayerAnimationSwitcher playerAnimationSwitcher;
 	public PlayerAnimationSwitcher monsterAnimationSwitcher;
+	public AudioClip[] stepsAudioClips;
 
 	public string CheckWin () {
 		if (Store.hp <= 0) return "lose";
@@ -84,6 +88,7 @@ public class Fight : MonoBehaviour {
 
 	private void Start () {
 		StartCoroutine ("FightSequence");
+		audioSource = GetComponent<AudioSource> ();
 	}
 
 	IEnumerator FightSequence () {
@@ -94,18 +99,21 @@ public class Fight : MonoBehaviour {
 		while (fightPhase < 1) {
 			yield return null;
 		}
+		audioSource.PlayOneShot(stepsAudioClips[0]);
 		ApplyCardEffects (PlayerCards[0], EnemyCards[0]);
 
 		Debug.Log ("Fight.cs 2");
 		while (fightPhase < 2) {
 			yield return null;
 		}
+		audioSource.PlayOneShot(stepsAudioClips[1]);
 		ApplyCardEffects (PlayerCards[1], EnemyCards[1]);
 
 		Debug.Log ("Fight.cs 3");
 		while (fightPhase < 3) {
 			yield return null;
 		}
+		audioSource.PlayOneShot(stepsAudioClips[2]);
 		ApplyCardEffects (PlayerCards[2], EnemyCards[2]);
 
 		Debug.Log ("Fight.cs 4");
