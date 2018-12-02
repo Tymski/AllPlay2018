@@ -79,6 +79,7 @@ GameObject:
   - component: {fileID: 225304427965518752}
   - component: {fileID: 82167638454544152}
   - component: {fileID: 114305241848440124}
+  - component: {fileID: 114790161037810908}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -357,6 +358,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114790161037810908}
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114443809989396226
@@ -425,6 +437,18 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 06f70e53f829bd047a2856dbe0451b9c, type: 2}
   power: 0
   isOpponent: 0
+--- !u!114 &114790161037810908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834391802954156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6cf0b765dad9d4e8c95c5078c1745f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSample: {fileID: 8300000, guid: 05548b1b2bb65af449a9069e8626539a, type: 3}
 --- !u!114 &114888494537026334
 MonoBehaviour:
   m_ObjectHideFlags: 1
